@@ -1,0 +1,31 @@
+# package directories
+node_modules
+
+# Serverless directories
+.serverless
+lib
+
+# Webpack directories
+.webpack
+
+# env directories
+environment/*
+!environment/env.example.yml
+
+# IDE
+.vscode/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+
+# build
+.build
+
+# misc
+.DS_Store
+*.http
+
+# swagger
+swagger
+

@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "lib": ["ESNext"],
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "target": "ES2020",
+    "outDir": "lib",
+    "importHelpers": true,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "allowJs": true,
+    "emitDecoratorMetadata": true,
+    "noFallthroughCasesInSwitch": false, // handled by eslint
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "serverless.ts",
+    "src/**/*.spec.ts",
+    "stacks/**/*.ts",
+    "stacks/**/**/*.ts",
+    "serverless/configs/*"
+  ],
+  "exclude": [
+    "node_modules/**/*",
+    ".serverless/**/*",
+    ".webpack/**/*",
+    "_warmup/**/*",
+    ".vscode/**/*"
+  ],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
+}
